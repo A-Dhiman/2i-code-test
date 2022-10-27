@@ -2,6 +2,7 @@ package com.ad.code;
 
 import java.util.List;
 import java.util.Set;
+
 import org.junit.Test;
 
 import static com.ad.code.CodeTestChallenge.createRawListOfNumbers;
@@ -13,6 +14,7 @@ public class Tests {
     @Test
     public void testUniqueReverseList() {
         List<Integer> rawUnsortedListOfNumbers = createRawListOfNumbers();
+        System.out.println("Raw list of 10 numbers: " + rawUnsortedListOfNumbers);
         List<Integer> reverseListOfNumbers = reverseSortedList(rawUnsortedListOfNumbers);
         Set<Integer> uniqueReverseListOfNumbers = uniqueSortedList(reverseListOfNumbers);
         System.out.println("Here is the unique and ordered list of numbers:" + uniqueReverseListOfNumbers);
